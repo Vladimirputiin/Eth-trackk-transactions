@@ -1,0 +1,28 @@
+{
+  "name": "eth-tracker-bot",
+  "description": "ETH + ERC20 transaction tracker with Telegram alerts",
+  "repository": "https://github.com/Vladimirputiin/Eth-trackk-transactions",
+  "keywords": ["ethereum", "web3", "telegram", "bot"],
+  "env": {
+    "ALCHEMY_API_KEY": {
+      "description": "Your Alchemy API Key",
+      "required": true
+    },
+    "TELEGRAM_TOKEN": {
+      "description": "Telegram Bot Token",
+      "required": true
+    },
+    "TELEGRAM_CHAT_ID": {
+      "description": "Telegram Chat ID",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "echo 'App Deployed!'"
+  }
+}
