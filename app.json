@@ -1,8 +1,7 @@
 {
-  "name": "eth-tracker-bot",
-  "description": "ETH + ERC20 transaction tracker with Telegram alerts",
+  "name": "eth-tracker-bot-v2",
+  "description": "Track ETH and ERC20 transfers in real-time using WebSocket",
   "repository": "https://github.com/Vladimirputiin/Eth-trackk-transactions",
-  "keywords": ["ethereum", "web3", "telegram", "bot"],
   "env": {
     "ALCHEMY_API_KEY": {
       "description": "Your Alchemy API Key",
@@ -21,8 +20,5 @@
     {
       "url": "heroku/nodejs"
     }
-  ],
-  "scripts": {
-    "postdeploy": "echo 'App Deployed!'"
-  }
+  ]
 }
